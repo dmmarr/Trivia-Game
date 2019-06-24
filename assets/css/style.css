@@ -1,0 +1,35 @@
+/* font-family: 'Rubik Mono One', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Monoton', cursive; */
+/* my google fonts so i dont forget */
+#q1,
+#q2,
+#q3
+{
+    font-family: 'Permanent Marker', cursive;
+}
+body {
+ 
+  background-position: center;
+
+
+    
+  }
+  h1{
+    font-family: 'Monoton', cursive;
+    font-size: 500px;
+    background: fuchsia;
+    text-align: center;
+    color:#F2EE8F ;
+    width: 500px;
+    
+  }
+  #q1{
+      color: pink;
+  }
+  #q2{
+      color: green;
+  }
+#q3{
+    color: #71E0EC;
+}
