@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="assets/css/style.css">
-<script type="text/javascript" src="assets/javascript/app.js"></script>
-<script src="jquery-3.4.1.min.js"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Monoton|Permanent+Marker|Rubik+Mono+One&display=swap" rel="stylesheet">
-<img src="https://assets.teenvogue.com/photos/5beb340b368e21796e2d8b85/16:9/w_1280%2Cc_limit/ppg2016_keyart_horizontal_nologos_final.jpg" alt="https://assets.teenvogue.com/photos/5beb340b368e21796e2d8b85/16:9/w_1280%2Cc_limit/ppg2016_keyart_horizontal_nologos_final.jpg">
-</head>
-<body>
-    <div class=" fluid container">
-    <h1><strong>Trivia Game!</strong></h1>
-    <h2 class="timer"></h2>
-    <div class="questions" id="trivia-questions">
-    <!-- My first question -->
-        <h3 id = "q1"> What PowerPuff Girl is pink?</h3>
-        <input type="radio" name= "first-Question-answer" id = "answer-a" value="a" >
-        <label for="question-1-answers-A"> A: Blossom </label>
-        <input type="radio" name= "first-Question-answer" id = "answer-b" value="b" >
-        <label for="question-1-answers-B"> B: ButterCup </label>
-        <input type="radio" name= "first-Question-answer" id = "answer-c" value="c" >
-        <label for="question-1-answers-c"> C: Bubbles</label>
-    <!--   This is my second question -->
-            <h3 id = "q2"> What PowerPuff Girl is blue?</h3>
-            <input type="radio" name= "second-question-answer" id = "answer-a" value="a">
-            <label for="question-2-answers-A"> A:Blossom </label>
-            <input type="radio" name= "second-Question-answer" id = "answer-b" value="b" >
-            <label for="question-2-answers-B"> B: ButterCup </label>
-            <input type="radio" name= "second-Question-answer" id = "answer-c" value="c" >
-            <label for="question-2-answers-B"> C: Bubbles </label>
-        <!-- This is my Third question -->
-        
-                <h3 id = "q3"> What PowerPuff Girl is green?</h3>
-                <input type="radio" name= "third-question-answer" id = "answer-a" value="a">
-                <label for="question-3-answers-A"> A:Blossom </label>
-                <input type="radio" name= "third-Question-answer" id = "answer-b" value="b" >
-                <label for="question-3-answers-B"> B: ButterCup </label>
-                <input type="radio" name= "third-Question-answer" id = "answer-c" value="c" >
-            <label for="question-3-answers-C"> C: Bubbles </label>
-            <div>
-                    <button class = "buttons"> Submit</button>
-                    <button class= "buttons"> Reset</button>
-            </div>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Permanent+Marker|Rubik+Mono+One&display=swap"
+        rel="stylesheet">
 
+</head>
+
+<body>
+
+    <div class=" container-fluid text-center mt-5 p-5">
+        <h1><strong>Trivia Game!</strong></h1>
+        <h2 class="timer"></h2>
+        <!-- <div class="questions" id="trivia-questions">
+            <! My first question -->
+        <!-- <h3 id="q1"> What PowerPuff Girl is pink?</h3>
+            <input type="radio" name="first-Question-answer" id="answer-a" value="a">
+            <label for="question-1-answers-A"> A: Blossom </label>
+            <input type="radio" name="first-Question-answer" id="answer-b" value="b">
+            <label for="question-1-answers-B"> B: ButterCup </label>
+            <input type="radio" name="first-Question-answer" id="answer-c" value="c">
+            <label for="question-1-answers-c"> C: Bubbles</label> -->
+        <!--   This is my second question -->
+        <!-- <h3 id="q2"> What PowerPuff Girl is blue?</h3>
+            <input type="radio" name="second-question-answer" id="answer-a" value="a">
+            <label for="question-2-answers-A"> A:Blossom </label>
+            <input type="radio" name="second-Question-answer" id="answer-b" value="b">
+            <label for="question-2-answers-B"> B: ButterCup </label>
+            <input type="radio" name="second-Question-answer" id="answer-c" value="c">
+            <label for="question-2-answers-B"> C: Bubbles </label> -->
+        <!-- This is my Third question -->
+
+        <!-- <h3 id="q3"> What PowerPuff Girl is green?</h3>
+            <input type="radio" name="third-question-answer" id="answer-a" value="a">
+            <label for="question-3-answers-A"> A:Blossom </label>
+            <input type="radio" name="third-Question-answer" id="answer-b" value="b">
+            <label for="question-3-answers-B"> B: ButterCup </label>
+            <input type="radio" name="third-Question-answer" id="answer-c" value="c">
+            <label for="question-3-answers-C"> C: Bubbles </label>
+            <div> -->
+        <!-- <button class="buttons"> Submit</button>
+                <button class="buttons"> Reset</button> -->
+        <!-- </div> -->
+        <button id="start">
+            Start
+        </button>
+        <div id="quiz"></div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
+

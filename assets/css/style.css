@@ -9,12 +9,13 @@ font-family: 'Monoton', cursive; */
     font-family: 'Permanent Marker', cursive;
 }
 body {
- 
-  background-position: center;
+background: url("./images/ppgirls.jpg") no-repeat;
+
+
 
 
     
-  }
+}
   h1{
     font-family: 'Monoton', cursive;
     font-size: 500px;
@@ -26,6 +27,7 @@ body {
   }
   #q1{
       color: pink;
+
   }
   #q2{
       color:#71E0EC;
